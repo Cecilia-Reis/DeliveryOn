@@ -11,7 +11,11 @@
 		EBAC811A2C10757200BFCA24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAC81192C10757200BFCA24 /* ContentView.swift */; };
 		EBAC811C2C10757400BFCA24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBAC811B2C10757400BFCA24 /* Assets.xcassets */; };
 		EBAC811F2C10757400BFCA24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBAC811E2C10757400BFCA24 /* Preview Assets.xcassets */; };
+		EBAFB0E72C109EEF00B82174 /* OrderTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAFB0E62C109EEF00B82174 /* OrderTypeView.swift */; };
 		EBE98F782C1079FC006F88AF /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE98F772C1079FC006F88AF /* NavigationBar.swift */; };
+		EBE98F7B2C108522006F88AF /* OrderTypeGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE98F7A2C108522006F88AF /* OrderTypeGridView.swift */; };
+		EBE98F7E2C108C05006F88AF /* OrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE98F7D2C108C05006F88AF /* OrderType.swift */; };
+		EBE98F802C108D04006F88AF /* DataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE98F7F2C108D04006F88AF /* DataSourceMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +24,11 @@
 		EBAC81192C10757200BFCA24 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EBAC811B2C10757400BFCA24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBAC811E2C10757400BFCA24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EBAFB0E62C109EEF00B82174 /* OrderTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTypeView.swift; sourceTree = "<group>"; };
 		EBE98F772C1079FC006F88AF /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		EBE98F7A2C108522006F88AF /* OrderTypeGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTypeGridView.swift; sourceTree = "<group>"; };
+		EBE98F7D2C108C05006F88AF /* OrderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderType.swift; sourceTree = "<group>"; };
+		EBE98F7F2C108D04006F88AF /* DataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				EBE98F762C1079C9006F88AF /* App */,
+				EBE98F7C2C108B16006F88AF /* Model */,
 				EBE98F752C1079BC006F88AF /* NavigationBar */,
+				EBE98F792C1084E8006F88AF /* GridView */,
 				EBAC811B2C10757400BFCA24 /* Assets.xcassets */,
 				EBAC811D2C10757400BFCA24 /* Preview Content */,
 			);
@@ -84,6 +94,24 @@
 				EBAC81192C10757200BFCA24 /* ContentView.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		EBE98F792C1084E8006F88AF /* GridView */ = {
+			isa = PBXGroup;
+			children = (
+				EBE98F7A2C108522006F88AF /* OrderTypeGridView.swift */,
+				EBAFB0E62C109EEF00B82174 /* OrderTypeView.swift */,
+			);
+			path = GridView;
+			sourceTree = "<group>";
+		};
+		EBE98F7C2C108B16006F88AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBE98F7D2C108C05006F88AF /* OrderType.swift */,
+				EBE98F7F2C108D04006F88AF /* DataSourceMock.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,7 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE98F7E2C108C05006F88AF /* OrderType.swift in Sources */,
 				EBAC811A2C10757200BFCA24 /* ContentView.swift in Sources */,
+				EBE98F802C108D04006F88AF /* DataSourceMock.swift in Sources */,
+				EBAFB0E72C109EEF00B82174 /* OrderTypeView.swift in Sources */,
+				EBE98F7B2C108522006F88AF /* OrderTypeGridView.swift in Sources */,
 				EBAC81182C10757200BFCA24 /* DeliveryOnApp.swift in Sources */,
 				EBE98F782C1079FC006F88AF /* NavigationBar.swift in Sources */,
 			);
@@ -299,6 +331,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,6 +360,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
