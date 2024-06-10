@@ -18,12 +18,17 @@ struct StoresContainerView: View {
                 .padding(20)
             
             VStack(alignment: .leading, spacing: 30) {
-                ForEach(StoresMock) {
-                    mock in StoresItemView(order: mock)
+                ForEach(storesMock) { mock in
+                    NavigationLink{
+                        StoreDetailView(store: mock)
+                    } label: {
+                        StoresItemView(store: mock)
+                    }
                 }
             }
         }
         .padding(25)
+        .foregroundColor(.black)
     }
 }
 
