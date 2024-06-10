@@ -9,18 +9,18 @@ import SwiftUI
 
 struct StoresItemView: View {
     
-    let order: OrderType
+    let store: StoreType
     
     var body: some View {
         HStack {
-            Image(order.image)
+            Image(store.logoImage)
                 .resizable()
                 .scaledToFit()
                 .cornerRadius(25)
                 .frame(width: 50, height: 50)
             
             VStack(alignment: .leading , spacing: 6) {
-                Text(order.name)
+                Text(store.name)
                     .font(.subheadline)
                 Text("20-30min")
                     .font(.system(size: 9))
@@ -32,6 +32,6 @@ struct StoresItemView: View {
 }
 
 #Preview {
-    StoresItemView(order: OrderType(id: 1, name: "Monster burguer", image:"monstro-burger-logo"))
+    StoresItemView(store: storesMock[0])
         .previewLayout(.sizeThatFits)
 }
